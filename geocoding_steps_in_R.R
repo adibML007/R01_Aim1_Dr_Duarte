@@ -7,6 +7,6 @@ View(provider_list)
 provider_list$add<-paste(provider_list$Address,
                          provider_list$City,
                          provider_list$State,sep=",")
-#X = provider_list
-#Y = geocode(X, address = add, method = "arcgis", verbose = TRUE)
-#write.csv(Y,'geocoded_address_FL_final.csv',row.names=FALSE)
+X = provider_list
+Y = geocode(X, address = add, method = "arcgis", verbose = TRUE)
+write.csv(Y,'geocoded_address_FL_final.csv',row.names=FALSE)
