@@ -31,6 +31,5 @@ for i in Origins:
 Geo = pd.DataFrame([])
 Geo['ZCTA'] = Origins
 Geo['Access_Score'] = X
-print(Geo)
 Geo.to_csv('Access.csv')
 
